@@ -5,3 +5,34 @@
     padding: 0;
     box-sizing: border-box;
  }
+  body {
+    background-color: #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+
+  }
+
+  .container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: inset;
+    width: 100%;
+    max-width: 600px;
+    overflow: auto;
+    position: relative;
+  }
+
+  .screen {
+    padding: 2rem;
+    text-align: center;
+
+  }
+
+  .screen.active {
+    display: block;
+
+  }
