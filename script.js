@@ -41,7 +41,7 @@ const questionsBank = [
 
     },
 
-        {
+       /* {
         question: "Which HTML element is used to define the most important heading?",
         options: [
             { text: "<heading>", correct: false },
@@ -154,6 +154,7 @@ const questionsBank = [
             { text: "href", correct: false }
         ]
     },
+    */
     {
         question: "In the CSS Box Model, which layer is between the padding and the margin?",
         options: [
@@ -199,6 +200,7 @@ const questionsBank = [
             { text: "'boolean'", correct: false }
         ]
     },
+    /*
     {
         question: "Which built-in JavaScript method converts a JSON string into a JavaScript object?",
         options: [
@@ -363,6 +365,7 @@ const questionsBank = [
             { text: "display", correct: false }
         ]
     },
+    */
     {
         question: "What is the result of 'console.log(typeof NaN)' in JavaScript?",
         options: [
@@ -399,7 +402,8 @@ const questionsBank = [
             { text: "To hide confidential data from browsers", correct: false }
         ]
     },
-    {
+    
+    /*{
         question: "Which storage mechanism holds data in the browser with no expiration date?",
         options: [
             { text: "sessionStorage", correct: false },
@@ -418,6 +422,7 @@ const questionsBank = [
             { text: "<label>", correct: false }
         ]
     },
+    
     {
         question: "Which HTML attribute specifies where to open a linked document when clicked?",
         options: [
@@ -436,6 +441,8 @@ const questionsBank = [
             { text: "Relative to the monitor's resolution", correct: false }
         ]
     },
+    */
+    /*
     {
         question: "Which CSS property specifies the order in which flex items appear inside a container?",
         options: [
@@ -1217,7 +1224,7 @@ const questionsBank = [
             { text: "Callback chain", correct: false },
             { text: "Prototype link", correct: false }
         ]
-    }
+    }*/
 ];
 
 
