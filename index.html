@@ -7,6 +7,7 @@
     <title>Play Quiz</title>
 </head>
 <body>
+<!-- Start Screen Container  -->
 
     <div class="container">
      <div class="screen active" id="start-screen">
@@ -15,7 +16,7 @@
         <button class="start-btn">Start Quiz</button>
      </div>
 
-
+<!-- quiz Questions and Score section display after clickig Start Quiz button -->
 
 
      <div class="screen" id="quiz-screen">
@@ -29,25 +30,25 @@
         </div>
 
 
-
+<!-- Answers options container  -->
         <div id="answer-container">Empty
             ................................
         </div>
 
-
+<!-- Progress-bar section-->
         <div class="progress-bar">
             <div id="progress" class="progress"></div>
         </div>
      </div>
 
-     
+     <!-- Result Section -->
      <div id="result-screen" class="screen">
         <h1>Quiz Results</h1>
         <div class="result-info">
             <p>You scored <span id="finalscroe">0</span> out of <span id="max-score">5</span></p>
             <div id="result-message">Good job!</div>
         </div>
-        <button id="restart-btn">Restar Quiz</button>
+        <button id="restart-btn">Restart Quiz</button>
      </div>
     </div>
     <script src="./script.js"></script>
