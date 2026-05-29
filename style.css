@@ -72,7 +72,7 @@
   }
 /* -------------------------answer container-------------------------*/
 
- .answers-container {
+ #answers-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

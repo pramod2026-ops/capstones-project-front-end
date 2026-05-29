@@ -10,7 +10,7 @@ const startButton = document.getElementById("start-btn");
 
 const questionText = document.getElementById("question-text");
 
-const answerContainer = document.getElementById("answers-container");
+const answersContainer = document.getElementById("answers-container");
 
 const currentQuestionSpan = document.getElementById("current-question");
 
@@ -1225,7 +1225,7 @@ const questionsBank = [
 
 let currentQuestionIndex = 0;
 let score = 0;
-let answersdisabled = false;
+let answersDisabled = false;
 
 totalQuestionsSpan.textContent = questionsBank.length;
 maxScoreSpan.textContent = questionsBank.length;
@@ -1262,15 +1262,14 @@ restartButton.addEventListener("click", restartQuiz);
     progressBar.style.width = progressPercent + "%";
     questionText.textContent = currentQuestion.question;
 
-    answerContainer.innerHtMl = "";
+    answersContainer.innerHTML = "";
 
-     currentQuestion.answers.forEach((answer) => {
+     currentQuestion.options.forEach((answer) => {
     const button = document.createElement("button");
     button.textContent = answer.text;
     button.classList.add("answer-btn");
-
-     button.addEventListener("click", selectAnswer);
-
+    button.dataset.correct = answer.correct;
+    button.addEventListener("click", selectAnswer);
     answersContainer.appendChild(button);
   });
 
@@ -1304,7 +1303,7 @@ restartButton.addEventListener("click", restartQuiz);
 
     // check if there are more questions or if the quiz is over
     if (currentQuestionIndex < questionsBank.length) {
-      showQuestion();
+      showQuestions();
     } else {
       showResults();
     }
