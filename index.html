@@ -13,7 +13,7 @@
      <div class="screen active" id="start-screen">
         <h1>Ready for the Quiz?</h1>
         <p>Answer fun questions and test your skills!</p>
-        <button class="start-btn">Start Quiz</button>
+        <button class="start-btn" id="start-btn">Start Quiz</button>
      </div>
 
 <!-- quiz Questions and Score section display after clickig Start Quiz button -->
@@ -21,9 +21,9 @@
 
      <div class="screen" id="quiz-screen">
         <div class="quiz-header">
-            <h2 id="question-text">Here is your question</h2>
+            <h2 id="question-text"></h2>
             <div class="quiz-info">
-                <p>Question <span id="current-question">1</span> of <span>5</span>
+                <p>Question <span id="current-question">1</span> of <span>all</span>
                 </p>
                 <p>Score:<span id="score">0</span></p>
             </div>
@@ -31,8 +31,8 @@
 
 
 <!-- Answers options container  -->
-        <div id="answer-container">Empty
-            ................................
+        <div id="answer-container">
+            
         </div>
 
 <!-- Progress-bar section-->
